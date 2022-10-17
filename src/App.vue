@@ -56,7 +56,6 @@ export default {
       Todos: []
     }
   },
-
   mounted () {
     this.getTodos()
   },
@@ -81,9 +80,6 @@ export default {
       this.Todos[index].content = document.getElementsByClassName('content')[index].innerHTML
       this.setTodo()
       alert('已更新!')
-    },
-    completeTodo (index) {
-      this.Todos[index].done = true
     },
     deleteTodo (index) {
       this.Todos.splice(index, 1)
